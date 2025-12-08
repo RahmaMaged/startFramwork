@@ -1,14 +1,14 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home.jsx";
 import About from "./Components/About/About.jsx";
 import Portfolio from "./Components/Portfolio/Portfolio.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import Layout from "./Components/Layout/Layout.jsx";
 
-const routers = createBrowserRouter([
+const routers = createHashRouter([
   {
     path: "/",
     element: <Layout />,
