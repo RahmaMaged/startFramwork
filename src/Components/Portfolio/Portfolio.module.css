@@ -1,0 +1,48 @@
+h1 {
+  color: #2c3e50;
+}
+
+.line {
+  height: 4px;
+  width: 80px;
+  background-color: #2c3e50;
+}
+
+i {
+  color: #2c3e50;
+}
+
+.innerContent {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  background-color: #1aba9f;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: #1aba9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.innerContent:hover .overlay {
+  opacity: 1;
+}
+
+.lightBox {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.image {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
